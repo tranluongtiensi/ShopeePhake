@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+<!--<RelativeLayout-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content">-->
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/slider"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        app:iss_auto_cycle="true"
+        app:iss_corner_radius="5"
+        app:iss_delay="0"
+        app:iss_error_image="@color/gray"
+        app:iss_period="1000"
+        app:iss_placeholder="@color/gray" />
+
+
+    <ImageButton
+        android:id="@+id/search_icon"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="19dp"
+        android:layout_toStartOf="@id/cart_icon"
+        android:background="@drawable/roundcorner"
+        android:scaleType="fitStart"
+        android:src="@drawable/search_icon" />
+
+    <ImageButton
+        android:id="@+id/camera_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="60dp"
+        android:src="@drawable/camera_icon"
+        android:background="@null" />
+
+    <ImageButton
+        android:id="@+id/cart_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="25dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cart_icon" />
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/chat_icon"
+        android:id="@+id/chat_icon"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="1dp"
+        android:background="@null"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/roundcorner"
+        android:id="@+id/bg"/>
+
+
+    <GridLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/roundcorner"
+        android:columnCount="3"
+        android:rowCount="2">
+                <ImageButton
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_rowSpan="2"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/qr_icon"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="15dp">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="17dp"
+                android:layout_marginTop="3dp"
+                android:text="shopeepay"
+                android:textAllCaps="false"
+                android:padding="0dp"
+                android:background="@android:color/transparent"
+                android:insetLeft="0dp"
+                android:insetRight="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="17dp"
+                android:padding="0dp"
+                android:background="@android:color/transparent"
+                android:text="Giảm 100k-Liên kết Ví Shopeepay ngay"
+                android:textColor="@color/black"
+                android:textSize="7sp"
+                android:textAllCaps="false"
+                android:insetLeft="0dp"
+                android:insetRight="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"/>
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/coin"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/coin" />
+
+                    <Button
+                        android:layout_width="69dp"
+                        android:layout_height="17dp"
+                        android:layout_marginTop="3dp"
+                        android:height="20dp"
+                        android:background="@android:color/transparent"
+                        android:insetLeft="-4dp"
+                        android:insetTop="0dp"
+                        android:insetRight="0dp"
+                        android:insetBottom="0dp"
+                        android:padding="0dp"
+                        android:text="Shopee xu"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:typeface="normal" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    android:padding="0dp"
+                    android:text="Đăng kí ngay hôm nay để nhận shopee xu"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:textSize="7sp" />
+</LinearLayout>
+    </GridLayout>
+
+</RelativeLayout>
